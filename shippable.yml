@@ -12,4 +12,4 @@ after_success:
 notifications:
   email:
       recipients:
-         naughton008@gmail.com
+         - naughton008@gmail.com
