@@ -47,7 +47,8 @@ public class AppTest
 	{
 		//simple class kind of like a struct for test cases inputs and expected outcomes
 		StudentTestCase testCases[] = {	new StudentTestCase(null, null, new StudentFields("", "", LocalDate.now(), 0, false)),
-										new StudentTestCase("", LocalDate.now().plusYears(15), new StudentFields("", "", LocalDate.now(), 0, false))
+										new StudentTestCase("", LocalDate.now().plusYears(15), new StudentFields("", "", LocalDate.now(), 0, false)),
+										new StudentTestCase("Tom", LocalDate.now().plusYears(18), new StudentFields("Tom", "Tom18", LocalDate.now().plusYears(18), 2019000000, true))
 										};
 		for(StudentTestCase t : testCases)
 		{

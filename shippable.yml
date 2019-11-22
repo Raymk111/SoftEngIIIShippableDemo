@@ -12,5 +12,7 @@ after_success:
 notifications:
   - integrationName: email
     type: email
-    recipients:
-     - naughton008@gmail.com
+    recipients: naughton008@gmail.com
+    on_success: always
+    on_failure: always
+    on_start: always
