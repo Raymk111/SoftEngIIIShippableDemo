@@ -43,7 +43,7 @@ public class AppTest
 	}
 
 	@Test
-	void testStudentInitializations()
+	public void testStudentInitializations()
 	{
 		//simple class kind of like a struct for test cases inputs and expected outcomes
 		StudentTestCase testCases[] = {	new StudentTestCase(null, null, new StudentFields("", "", LocalDate.now(), 0, false)),
