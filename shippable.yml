@@ -10,6 +10,7 @@ after_success:
 
 
 notifications:
-  email:
-      recipients:
-         - naughton008@gmail.com
+  - integrationName: email
+    type: email
+    recipients:
+     - naughton008@gmail.com
