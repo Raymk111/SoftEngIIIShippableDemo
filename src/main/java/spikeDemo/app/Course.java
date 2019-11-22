@@ -31,7 +31,7 @@ public class Course
 	
 	public boolean addModule(String moduleName, ArrayList<Long> sIds)
 	{
-		if(getModuleByName(moduleName) != null)
+		if(moduleName == null || moduleName.isEmpty() || getModuleByName(moduleName).size() > 0)
 		{
 			return false;
 		}

@@ -26,8 +26,8 @@ public class Student
 			return;
 		}
 		
-		Period ageOfPerson = Period.between(dob, now);
-		if(ageOfPerson.getYears() < 16)
+		Period ageOfPerson = Period.between(now, dob);
+		if(ageOfPerson.getYears() < 16 || name.isEmpty())
 		{
 
 			this.dob = now;
@@ -43,7 +43,7 @@ public class Student
 		this.name = name;
 		if(!idIncrementers.containsKey(now.getYear()))
 		{
-			idIncrementers.put(now.getYear(), "000000");
+			idIncrementers.put(now.getYear(), String.valueOf(now.getYear()) + "000000");
 		}		
 		this.id = Long.parseLong(idIncrementers.get(LocalDate.now().getYear()));
 		Long nextIDForYear = Long.parseLong(idIncrementers.get(now.getYear())) + 1;
